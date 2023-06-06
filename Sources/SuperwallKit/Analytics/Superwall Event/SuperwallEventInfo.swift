@@ -15,7 +15,7 @@ public final class SuperwallEventInfo: NSObject {
   public let event: SuperwallEvent
 
   /// Objective-C compatible ``SuperwallEvent``.
-  @available(swift, obsoleted: 1.0)
+  // @available(swift, obsoleted: 1.0) /// Supress `Stored properties cannot be marked unavailable with '@available'` error. // TODO: this is a bad temporary solution!
   @objc(event)
   public lazy var eventObjc: SuperwallEventObjc = {
     return SuperwallEventObjc(event: event)

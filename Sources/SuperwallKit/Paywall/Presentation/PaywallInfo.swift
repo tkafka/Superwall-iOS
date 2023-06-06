@@ -16,7 +16,7 @@ public final class PaywallInfo: NSObject {
   /// Superwall's internal ID for this paywall.
   let databaseId: String
 
-  @available(*, unavailable, renamed: "databaseId")
+  // @available(*, unavailable, renamed: "databaseId") /// Supress `Stored properties cannot be marked unavailable with '@available'` error. // TODO: this is a bad temporary solution!
   let id: String = ""
 
   /// The identifier set for this paywall in the Superwall dashboard.
